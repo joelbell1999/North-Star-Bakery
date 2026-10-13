@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact &amp; Orders | North Star Bakery</title>
+  <meta name="description" content="Contact North Star Bakery with a question or an order inquiry.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="assets/bakery-logo_c.png" alt="North Star Bakery home" width="500"></a>
+    <p>Fresh from the oven, made for sharing.</p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Our breads &amp; pastries</a></li>
+        <li><a href="about.html">About North Star</a></li>
+        <li><a href="contact.html" aria-current="page">Contact &amp; orders</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Contact &amp; orders</h1>
+    <p>Have a question about what is fresh or want to ask about an order? Send us a note and include the details that will help us get back to you.</p>
+    <form action="#" method="get">
+      <fieldset>
+        <legend>Your message to North Star Bakery</legend>
+        <p>
+          <label for="name">Your name</label><br>
+          <input type="text" id="name" name="name" autocomplete="name" required>
+        </p>
+        <p>
+          <label for="email">Email address</label><br>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </p>
+        <p>
+          <label for="reason">What can we help with?</label><br>
+          <select id="reason" name="reason" required>
+            <option value="" selected disabled>Choose a topic</option>
+            <option value="product-question">Product question</option>
+            <option value="order-inquiry">Order inquiry</option>
+            <option value="other">Something else</option>
+          </select>
+        </p>
+        <p>
+          <label for="message">Your message</label><br>
+          <textarea id="message" name="message" rows="6" required minlength="10"></textarea>
+        </p>
+        <p><button type="submit">Send inquiry</button></p>
+      </fieldset>
+    </form>
+    <p>This sample form is ready for a website form handler to receive submissions.</p>
+  </main>
+  <footer>
+    <p>&copy; 2026 North Star Bakery</p>
+    <p><a href="index.html">Return to the home page</a></p>
+  </footer>
+</body>
+</html>
+
+

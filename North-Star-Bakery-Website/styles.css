@@ -1,0 +1,278 @@
+:root {
+  color-scheme: light;
+  --cream: #fbf7f0;
+  --white: #ffffff;
+  --brown: #543b2d;
+  --wheat: #c69c76;
+  --ink: #30271f;
+  --content-width: 68rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+header {
+  padding: 1.25rem 1rem 0;
+  background: var(--white);
+  text-align: center;
+}
+
+header > a {
+  display: inline-block;
+}
+
+header img {
+  display: block;
+  width: min(100%, 19rem);
+  height: auto;
+}
+
+header > p {
+  margin: 0.25rem 0 1rem;
+  color: var(--brown);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+nav {
+  margin: 0 -1rem;
+  background: var(--brown);
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  padding: 0.55rem 0.8rem;
+  border-radius: 0.35rem;
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus-visible,
+nav a[aria-current="page"] {
+  background: var(--wheat);
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+main {
+  width: min(100% - 2rem, var(--content-width));
+  margin: 0 auto;
+  padding: 2rem 0 3rem;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--brown);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.2;
+}
+
+h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2rem, 7vw, 3.5rem);
+}
+
+h2 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.5rem, 4vw, 2.1rem);
+}
+
+p {
+  max-width: 72ch;
+}
+
+a {
+  color: var(--brown);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--ink);
+}
+
+main > picture,
+main > img,
+figure {
+  display: block;
+  margin: 1.5rem 0 2rem;
+}
+
+main picture img,
+main > img,
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.65rem;
+}
+
+figure figcaption {
+  margin-top: 0.65rem;
+  color: var(--brown);
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+}
+
+main > section {
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  border-top: 0.25rem solid var(--wheat);
+  border-radius: 0.5rem;
+  background: var(--white);
+}
+
+main > section > :last-child {
+  margin-bottom: 0;
+}
+
+audio {
+  display: block;
+  width: min(100%, 32rem);
+  margin: 1rem 0;
+}
+
+form {
+  margin: 1.5rem 0;
+}
+
+fieldset {
+  min-width: 0;
+  padding: 1.25rem;
+  border: 2px solid var(--wheat);
+  border-radius: 0.6rem;
+  background: var(--white);
+}
+
+legend {
+  padding: 0 0.5rem;
+  color: var(--brown);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.6rem 0.7rem;
+  border: 1px solid var(--brown);
+  border-radius: 0.35rem;
+  background: var(--white);
+  color: var(--ink);
+  font: inherit;
+}
+
+textarea {
+  min-height: 9rem;
+  resize: vertical;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--wheat);
+  outline-offset: 3px;
+}
+
+button {
+  min-height: 2.75rem;
+  padding: 0.65rem 1.1rem;
+  border: 2px solid var(--brown);
+  border-radius: 0.35rem;
+  background: var(--brown);
+  color: var(--white);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--wheat);
+  color: var(--ink);
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  padding: 1rem max(1rem, calc((100% - var(--content-width)) / 2));
+  background: var(--brown);
+  color: var(--white);
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+footer a {
+  color: var(--white);
+}
+
+footer a:hover,
+footer a:focus-visible {
+  color: var(--wheat);
+}
+
+@media (min-width: 48rem) {
+  header {
+    padding-top: 1.75rem;
+  }
+
+  main {
+    padding-top: 3rem;
+  }
+
+  main > section {
+    padding: 1.75rem;
+  }
+
+  form p {
+    max-width: 42rem;
+  }
+
+  fieldset {
+    padding: 1.75rem;
+  }
+}
