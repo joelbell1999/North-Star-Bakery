@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Breads &amp; Pastries | North Star Bakery</title>
+  <meta name="description" content="Explore the breads and pastries at North Star Bakery.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="assets/bakery-logo_c.png" alt="North Star Bakery home" width="500"></a>
+    <p>Fresh from the oven, made for sharing.</p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" aria-current="page">Our breads &amp; pastries</a></li>
+        <li><a href="about.html">About North Star</a></li>
+        <li><a href="contact.html">Contact &amp; orders</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Breads &amp; pastries</h1>
+    <p>Take a look at a few of the treats waiting at North Star Bakery. For current availability or an order, please <a href="contact.html">get in touch</a>.</p>
+    <section class="product-filter" aria-labelledby="filter-heading">
+      <h2 id="filter-heading">Browse by type</h2>
+      <p>Choose a category to narrow the list; your choice will be remembered on this browser.</p>
+      <div class="filter-controls" role="group" aria-label="Filter bakery offerings">
+        <button class="filter-button" type="button" data-filter="all" aria-pressed="true">All offerings</button>
+        <button class="filter-button" type="button" data-filter="bread" aria-pressed="false">Breads</button>
+        <button class="filter-button" type="button" data-filter="pastry" aria-pressed="false">Pastries</button>
+      </div>
+      <p id="filter-status" role="status" aria-live="polite">Showing all 3 offerings.</p>
+    </section>
+    <section data-product data-category="bread">
+      <h2>Signature loaf</h2>
+      <figure>
+        <img src="assets/bakery-signature-loaf_c.png" alt="Round, flour-dusted artisan loaf resting on a checked cloth" width="1200">
+        <figcaption>A hearty, crusty loaf made for the center of the table.</figcaption>
+      </figure>
+      <p>Serve it alongside dinner, toast a slice for breakfast, or share it with friends.</p>
+    </section>
+    <section data-product data-category="bread">
+      <h2>Something from the bread oven</h2>
+      <img src="assets/bakery-bread_c.png" alt="Assorted baked goods arranged in the bakery display case" width="1200">
+      <p>Our bakery case brings together warm, familiar favorites. Ask us what is fresh today.</p>
+    </section>
+    <section data-product data-category="pastry">
+      <h2>Pastries for the moment</h2>
+      <p>Choose a pastry for a small treat, or bring a few to share. Selection may vary; contact us to ask what is available.</p>
+      <p><a href="contact.html">Ask about today’s selection</a></p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 North Star Bakery</p>
+    <p><a href="contact.html">Contact North Star Bakery</a></p>
+  </footer>
+</body>
+</html>
