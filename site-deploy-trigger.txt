@@ -1,0 +1,7 @@
+Triggering GitHub Actions Pages deploy
+
+This file was created to trigger the Pages deployment workflow.
+
+Triggered at: 2026-10-15T12:52:30Z
+
+If you want to remove this file after deployment, you can delete it from the repository.
